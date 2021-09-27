@@ -63,7 +63,7 @@ def nega_move(board, cur_play):
     for x in range(len(temp[1])):
         changed = temp[1][x]
         board = temp[0][x]
-        res = -1*negamax(board, other_play) #Was having issues with Negamax and the answer always being the inverse, so I just multiplied by -1
+        res = -1*negamax(board, other_play)
         results.append(res)
         boards.append(board)
         changes.append(changed)
